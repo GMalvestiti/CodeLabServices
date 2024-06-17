@@ -1,0 +1,21 @@
+services:
+  rabbitmq:
+    build:
+      context: ./.docker/rabbitmq
+      dockerfile: Dockerfile
+    container_name: rabbitmq
+    volumes:
+      - .docker/rabbitmq/data:/var/lib/rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=codelab
+      - RABBITMQ_DEFAULT_PASS=c0D3&l4b
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - codelab-net
+
+networks:
+  codelab-net:
+    name: codelab-net
+    external: true
