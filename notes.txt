@@ -1,1 +1,6 @@
 docker network create codelab-net
+
+kong >>> gateway
+https://docs.konghq.com/gateway/latest/get-started/
+
+nome do container = hostname dele

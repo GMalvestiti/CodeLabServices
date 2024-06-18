@@ -1,7 +1,17 @@
-FROM rabbitmq:3.13.3-management
+# FROM rabbitmq:3.13.3-management-alpine
 
-WORKDIR /var/lib/rabbitmq
+# RUN apk add --no-cache shadow openssl
 
-COPY . .
+# WORKDIR /var/lib/rabbitmq
 
-CMD ["rabbitmq-server"]
+# COPY . .
+
+# CMD ["rabbitmq-server"]
+
+FROM rabbitmq:3.13.1-management-alpine
+
+RUN apk add --no-cache shadow openssl
+
+RUN usermod -u 1000 rabbitmq
+
+EXPOSE 5672 15672
