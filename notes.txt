@@ -4,3 +4,5 @@ kong >>> gateway
 https://docs.konghq.com/gateway/latest/get-started/
 
 nome do container = hostname dele
+
+requisição kong >>> porta 3000
