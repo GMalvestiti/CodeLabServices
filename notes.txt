@@ -6,3 +6,9 @@ https://docs.konghq.com/gateway/latest/get-started/
 nome do container = hostname dele
 
 requisição kong >>> porta 3000
+
+grpc
+    MicroserviceOptions >>> server
+    GrpcOptions >>> client
+
+Observable lastValueFrom
