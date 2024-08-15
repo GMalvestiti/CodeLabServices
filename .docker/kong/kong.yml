@@ -10,6 +10,13 @@ services:
         paths:
           - /api/v1/usuario
 
+  - name: usuario-recuperacao-senha-service
+    url: http://api-usuario:3001/api/v1/usuario/recuperacao-senha
+    routes:
+      - name: recuperacao-senha-requests
+        paths:
+          - /api/v1/usuario/recuperacao-senha
+
   - name: email-service
     url: http://api-email:3002/api/v1/email
     routes:
@@ -24,6 +31,19 @@ services:
         paths:
           - /api/v1/produto
 
+  - name: pessoa-service
+    url: http://api-pessoa:3004/api/v1/pessoa
+    routes:
+      - name: pessoa-route
+        paths:
+          - /api/v1/pessoa
+
+  - name: financeiro-service
+    url: http://api-financeiro:3005/api/v1/financeiro
+    routes:
+      - name: financeiro-route
+        paths:
+          - /api/v1/financeiro
 
 # plugins:
 #   - name: jwt
