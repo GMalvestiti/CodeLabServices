@@ -12,3 +12,11 @@ grpc
     GrpcOptions >>> client
 
 Observable lastValueFrom
+
+conta-receber.service.ts >>> aula 19 >>> grpc apipessoa >>> 09:30 >>> e dado histórico 14:35
+
+APIVenda
+    aula 19 >>> 45:40
+
+aula 19
+    ChannelRef type
