@@ -20,3 +20,5 @@ APIVenda
 
 aula 19
     ChannelRef type
+    redis cache
+    nestjs task schedule
