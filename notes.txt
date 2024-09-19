@@ -22,3 +22,6 @@ aula 19
     ChannelRef type
     redis cache
     nestjs task schedule
+
+aula 20
+    jwt https://docs.konghq.com/hub/kong-inc/jwt/
