@@ -24,5 +24,7 @@ aula 19
     nestjs task schedule
 
 aula 20
+    kong consumer api
     jwt https://docs.konghq.com/hub/kong-inc/jwt/
     axios
+    migrations >>> https://orkhan.gitbook.io/typeorm/docs/migrations
