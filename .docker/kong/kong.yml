@@ -62,6 +62,15 @@ services:
     plugins:
       - name: jwt
 
+  - name: venda-service
+    url: http://api-financeiro:3005/api/v1/venda
+    routes:
+      - name: venda-route
+        paths:
+          - /api/v1/venda
+    plugins:
+      - name: jwt
+
 plugins:
   - name: jwt
     route: usuario-route
