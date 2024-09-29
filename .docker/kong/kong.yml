@@ -63,7 +63,7 @@ services:
       - name: jwt
 
   - name: venda-service
-    url: http://api-financeiro:3005/api/v1/venda
+    url: http://api-venda:3006/api/v1/venda
     routes:
       - name: venda-route
         paths:
