@@ -26,6 +26,13 @@ services:
         paths:
           - /api/v1/usuario/recuperacao-senha
 
+  - name: usuario-alterar-senha-service
+    url: http://api-usuario:3001/api/v1/usuario/alterar-senha
+    routes:
+      - name: alterar-senha-usuario-route
+        paths:
+          - /api/v1/usuario/alterar-senha
+
   - name: email-service
     url: http://api-email:3002/api/v1/email
     routes:
